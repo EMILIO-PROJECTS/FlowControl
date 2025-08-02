@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+    system ("cls");
+
+    int a = 8;
+    int b = 5;
+    int max;
+
+    if(a > b) {
+        max = a;
+    } else {    
+        max = b;
+    }
+
+    cout << "max: " << max << endl;
+    
+
+    max = (a > b) ? a : b;
+
+    cout << "max: " << max << endl;
+
+
+    int max = (a > b) ? a : b;
+    cout << "max: " << max << endl; // same result will be
+
+
+}

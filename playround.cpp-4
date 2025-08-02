@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+    system ("cls");
+
+    int a = 5;
+
+    {
+        bool ligth = true;
+
+        {
+            float pi = 3.14;
+        }
+    }   
+
+    int b = 10;
+    int c = 15;
+
+    {
+        int a = 1;
+        cout << a << endl;   // 1
+
+        {
+           
+
+            {
+                cout << a << endl;   // 2
+            }
+        }
+    }
+}

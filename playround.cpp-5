@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+    system ("cls");
+
+    int a = 16;
+    int b = 15;
+
+    bool result = (a < b);
+
+    cout << std::boolalpha;
+    cout << "result: " << result << endl;   // true
+
+    if (result == true) {
+        cout << a << " less than " << b << endl;
+    }
+
+    if (!(result == true)) {      // equvialents: if (result != true);  if (result == false);
+        cout << a << " is not less than " << b << endl;
+    }
+
+
+    // alternative to above
+    if (result == true) {
+        cout << a << " less than " << b << endl;
+    } else if (!(result == true)) {
+        cout << a << " is not less than " << b << endl;
+    }
+
+
+    // alternative to above
+    if (result == true) {
+        cout << a << " less than " << b << endl;
+    } else {
+        cout << a << " is not less than " << b << endl;
+    }
+
+        // alternative to above
+    if (result) {
+        cout << a << " less than " << b << endl;
+    } else {
+        cout << a << " is not less than " << b << endl;
+    }
+
+    // alternative to above
+    if (a < b) {
+        cout << a << " < " << b << endl;
+    } else {
+        cout << a << " >= " << b << endl;
+    }
+
+}

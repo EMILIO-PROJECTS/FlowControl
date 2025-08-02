@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+    system ("cls");
+
+    // nested conditional statements
+    bool red = false;
+    bool green = true;
+    bool yellow = false;
+
+    bool police_stop = false;
+
+    if (red) {
+        cout << "Stop" << endl;
+    }
+
+    if (yellow) {
+        cout << "Slow down" << endl;
+    }
+
+    if (green) {
+        if (police_stop) {
+            cout << "Stop" << endl;
+        } else {
+            cout << "Go" << endl;
+        }
+    }
+
+    // The best alternative to the above!
+    if (green && !police_stop) {
+        cout << "Go" << endl;
+    } else {
+        cout << "Stop" << endl;
+    } 
+    
+}

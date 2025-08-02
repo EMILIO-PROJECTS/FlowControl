@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+    system ("cls");
+
+    int a = 5;
+
+    {
+        {
+            int b = 10;
+        }
+
+        cout << a << endl;
+
+        {
+            {
+                {
+                    {
+                        int x = a;
+                    }
+        
+                }
+            } 
+
+        }
+    }
+
+}
